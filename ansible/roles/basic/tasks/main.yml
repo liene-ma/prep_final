@@ -1,0 +1,7 @@
+---
+- name: install some application on Centos
+  package:
+    state: present
+    name: "{{ item }}"
+  loop:
+    - git
